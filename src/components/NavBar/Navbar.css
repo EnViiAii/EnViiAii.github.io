@@ -1,0 +1,44 @@
+/* Navbar.css */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo {
+  h2 {
+    font-size: 24px;
+  }
+}
+.link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.username {
+  span {
+    font-size: 14px;
+  }
+}
+
+.logout {
+  .link-manager {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap");
+
+.chat-box {
+  background-color: #fff;
+  color: #000;
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 0 5px #ccc;
+  margin-top: 150px;
+  /* Hiệu ứng hoạt hình */
+  animation: chat-box-appear 0.5s ease-in-out;
+}
+
+@keyframes chat-box-appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.chat-messages {
+  overflow-y: auto;
+  height: 600px;
+}
+
+.message {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  font-family: Segoe UI, sans-serif;
+
+  /* Hiệu ứng bo tròn góc */
+  border-radius: 15px;
+}
+
+.user-message {
+  background-color: #00ffff;
+  float: right;
+  clear: both;
+}
+
+.bot-message {
+  background-color: #f0ffff;
+  float: left;
+  clear: both;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.input-box input {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.input-box button {
+  background-color: #2778b3;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: Segoe UI, sans-serif;
+  font-size: 24px;
+}
+
+@media (max-width: 400px) {
+  .chat-box {
+    width: 600px;
+    height: 600px;
+  }
+
+  .chat-messages {
+    height: 400px;
+  }
+
+  .input-box {
+    margin-top: 20px;
+  }
+}
